@@ -7,11 +7,15 @@ const CLIENT_ID = process.env['client_id']
 const GUILD_ID = process.env['guild_id']
 
 const commands = [{
-  name: 'ziz',
-  description: 'Replies with yo!'
+  name: 'start',
+  description: 'Replies with a short guide helping you get started.'
 },{
-  name: 'video',
-  description: 'Replies with newest video!'
+  name: 'help',
+  description: 'Replies with FAQs and where you can find support.'
+}
+{   name: 'beginner',
+  description: 'Replies with best beginner resources to start with.'
+
 }]; 
 console.log(CLIENT_ID)
 const rest = new REST({ version: '9' }).setToken(token);
